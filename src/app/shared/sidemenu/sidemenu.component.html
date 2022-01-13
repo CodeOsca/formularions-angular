@@ -1,0 +1,30 @@
+
+<h2>Template</h2>
+<ul class="list-group mb-4">
+    <li 
+    *ngFor="let item of templateRoutes"
+    class="list-group-item" 
+    [routerLink]="[item.route]" 
+    routerLinkActive="active"
+    >{{item.texto}}</li>
+</ul>
+
+<h2>Reactive</h2>
+<ul class="list-group mb-4">
+    <li
+    *ngFor="let item of reactiveRoutes"
+    class="list-group-item" 
+    [routerLink]="[item.route]" 
+    routerLinkActive="active"
+    > {{item.texto}} </li>
+</ul>
+
+<h2>Authentication</h2>
+<ul class="list-group mb-4">
+    <li
+    *ngFor="let item of authRoutes"
+    class="list-group-item" 
+    [routerLink]="[item.route]" 
+    routerLinkActive="active"
+    > {{item.texto}} </li>
+</ul>
